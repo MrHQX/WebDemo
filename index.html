@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>我的第一个落地页</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">MyBrand</a>
+            <!-- 折叠按钮：在移动端显示 -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+                aria-controls="navMenu" aria-expanded="false" aria-label="切换导航">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- 折叠内容：菜单链接 -->
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">首页</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">产品</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">定价</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">联系我们</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="py-5 text-center bg-light">
+        <!-- py-5：上下内边距大约 3rem -->
+        <!-- text-center：文字居中 -->
+        <!-- bg-light：浅灰背景 -->
+
+        <div class="container">
+            <!-- container：内容宽度固定并居中 -->
+
+            <!-- 主标题 -->
+            <h1 class="display-4 fw-bold">
+                <!-- display-4：大号标题样式 -->
+                <!-- fw-bold：字体加粗 -->
+                欢迎来到 MyBrand
+            </h1>
+
+            <!-- 副标题 -->
+            <p class="lead mb-4">
+                <!-- lead：引导段落，字体稍大且行高更宽 -->
+                <!-- mb-4：下外边距大约 1.5rem -->
+                我们用心打造，让你的项目更上一层楼。
+            </p>
+
+            <!-- 行动按钮 -->
+            <a href="#" class="btn btn-secondary btn-lg">
+                <!-- btn：基础按钮样式 -->
+                <!-- btn-primary：主色调按钮 -->
+                <!-- btn-lg：大号按钮，内边距更充足 -->
+                立即体验
+            </a>
+        </div>
+    </header>
+    <!-- Hero 区块结束 -->
+    <!-- Features 区块开始 -->
+    <section class="py-5">
+        <!-- py-5：上下内边距约 3rem，让内容有呼吸感 -->
+
+        <div class="container">
+            <!-- container：固定宽度并居中 -->
+
+            <!-- 区块标题 -->
+            <h2 class="h3 text-center mb-4">
+                <!-- h3：与 display 不同，更适合次级标题 -->
+                <!-- text-center：居中对齐 -->
+                <!-- mb-4：下外边距约 1.5rem -->
+                我们的特点
+            </h2>
+
+            <!-- 三列布局 -->
+            <div class="row">
+                <!-- row：Bootstrap 栅格行，用来包裹列（col-） -->
+
+                <!-- 第一列 -->
+                <div class="col-md-4 text-center mb-4">
+                    <!-- col-md-4：中等屏幕（≥768px）时占 4/12，三列平分；小屏自动垂直堆叠 -->
+                    <!-- text-center：让图标和文字都居中 -->
+                    <!-- mb-4：在小屏下列与列之间有间距 -->
+
+                    <!-- 图标（可换成你喜欢的 SVG 或 Icon 字体） -->
+                    <div class="mb-3">
+                        <i class="bi bi-speedometer2" style="font-size:2rem;"></i>
+                        <!-- bi bi-speedometer2：Bootstrap Icons 的仪表盘图标 -->
+                        <!-- style="font-size:2rem;"：内联样式，图标放大到 2rem -->
+                    </div>
+
+                    <!-- 小标题 -->
+                    <h5 class="fw-bold">高性能</h5>
+                    <!-- fw-bold：字体加粗 -->
+
+                    <!-- 描述文本 -->
+                    <p class="text-muted">
+                        <!-- text-muted：浅灰色文字，弱化次要信息 -->
+                        加载快速、响应迅速，让用户体验更流畅。
+                    </p>
+                </div>
+
+                <!-- 第二列 -->
+                <div class="col-md-4 text-center mb-4">
+                    <div class="mb-3">
+                        <i class="bi bi-shield-lock" style="font-size:2rem;"></i>
+                    </div>
+                    <h5 class="fw-bold">安全可靠</h5>
+                    <p class="text-muted">
+                        严格加密和最佳实践，保护你的数据隐私。
+                    </p>
+                </div>
+
+                <!-- 第三列 -->
+                <div class="col-md-4 text-center mb-4">
+                    <div class="mb-3">
+                        <i class="bi bi-phone" style="font-size:2rem;"></i>
+                    </div>
+                    <h5 class="fw-bold">全平台支持</h5>
+                    <p class="text-muted">
+                        无缝兼容手机、平板和桌面，随时随地都能访问。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5 bg-light">
+        <!--浅灰背景-->
+        <div class="container">
+            <h2 class="h3 text-center mb-4">卡片案例演示</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="img/one.png" class="card-img-top" alt="实例图片">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">案例1</h5>
+                            <p class="card-text flex-grow-1">
+                                this one ----------------------
+                            </p>
+                            <a href="#" class="btn btn-outline-primary mt-auto">
+                                look more
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="img/two.png" class="card-img-top" alt="实例图片">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">案例2</h5>
+                            <p class="card-text flex-grow-1">
+                                this one ----------------------
+                            </p>
+                            <a href="#" class="btn btn-outline-primary mt-auto">
+                                look more
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="img/three.png" class="card-img-top" alt="实例图片">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">案例3</h5>
+                            <p class="card-text flex-grow-1">
+                                this one ----------------------
+                            </p>
+                            <a href="#" class="btn btn-outline-primary mt-auto">
+                                look more
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--感觉写到这里我对boostrap的类还是有些陌生，哪怕是写过的，经常跟着写了却忘了作用 ，有什么方便-->
+        </div>
+    </section>
+</body>
+
+</html>
